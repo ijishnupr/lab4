@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csstable</title>
+    <style>
+        table,
+        td,
+        th {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-decoration: bold;
+        }
+
+        .in {
+            display: inline-block;
+        }
+
+
+        .main {
+            border: 3px solid black;
+            padding: 9px;
+        }
+
+        input {
+            border: 2px inset;
+            float: right;
+        }
+        .col{
+            width:30%;
+            height:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <br><br><br>
+            <p class="in" style="float:left;">show<select>
+                    <option>5</option>
+                    <option>4</option>
+                </select>entries
+
+            </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h1 class="in" style="margin-left:15%"><span style="font-weight: Normal;">Customer</span> Details</h1>
+            <input class="in" type="search" placeholder="search">
+
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>#</th>
+               
+                <th class="col">Name</th>
+                <th class="col">Address</th>
+                <th class="col">City</th>
+                <th class="col">Pincode</th>
+                <th class="col">Country</th>
+                <th class="col">Actions</th>
+            </tr>
+            <tr>
+                <th class="col">1</th>
+                <td>Thomas Hardy</td>
+                <td>89 Chiarsco Rd</td>
+                <td>Portland</td>
+                <td>91219</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
